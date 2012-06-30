@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Git para vincoorbianos</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <script src="https://github.com/downloads/gnab/remark/remark-0.3.5.min.js" type="text/javascript"></script>
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <style type="text/css" media="screen">
+            /* Slideshow styles */
+            .slide{
+                font-family: "Lato", Sans-serif;
+                font-size: 26px;
+            }
+            .section{
+                background-color: #FFE596;
+            }
+            h1, h2{
+                font-family: "Yanone Kaffeesatz", Serif;
+            }
+            h1{
+                color: #F28545;
+                font-size: 300%;
+            }
+            .title h1{
+                color: #F24173;
+            }
+            h2{
+                color: #F2B241;
+                font-size: 200%;
+            }
+            .middle h2{
+                font-size: 350%;
+                color: #F24173;
+            }
+            h2 em{
+                font-weight: normal;
+                font-style: normal;
+            }
+            h3{
+                color: #777;
+                font-size: 150%;
+            }
+            strong, em{
+                color: #03738C;
+            }
+            a{
+                color: #F24173;
+            }
+            .intermission{
+                background: #CCC url('img/intermission.jpg') no-repeat center;
+            }
+            .deploys{
+                background-image: url('img/atlantis.jpg');
+            }
+            .workflow h1, .workflow h3{
+                color: #F2B241;
+                text-shadow: 0.1em 0.1em 0.2em #000;
+            }
+            .workflow-1{
+                background: url("img/obamas-elf.jpg") no-repeat scroll center center #000000;
+            }
+            .workflow-2{
+                background: url("img/happy-together.jpg") no-repeat scroll right center #FFF;
+                text-align: left;
+            }
+            .workflow-2 h1, .workflow-2 h3{
+                color: #03738C;
+                text-shadow: none;
+            }
+            .workflow-3{
+                background: url("img/grease.png") no-repeat scroll center center #000000;
+            }
+        </style>
+    </head>
+    <body>
+        <textarea id="source">
+.center.middle.title
+# Git para vincoorbianos
+### Jair Trejo
+
+---
+## ¿Para cincoovnianos?
+* No es un tutorial, el mejor es [http://git-ref.org](http://git-ref.org)
+
+* No es sobre emular SVN con Git
+
+* Es un punto de partida para entender Git y explorarlo por su cuenta.
+
+.right[![Ovni](img/ovni.jpg)]
+
+---
+.center.middle.section
+## ¿Por qué ![Git](img/git.png) ?
+
+---
+## En mis tiempos nos pasábamos zips en diskettes&nbsp;de&nbsp;3&half;
+.right[![Diskette](img/floppy.jpg)]
+
+---
+## Un VCS administra nuestras versiones y responde preguntas
+
+* ¿**Qué** diferencias existen entres dos versiones del código?
+
+* ¿**Cómo** ha cambiado el código a través del tiempo?
+
+* ¿A **quién** le pregunto por qué hizo esto?
+.right[![Administrador](img/bookkeeping.jpg)]
+
+---
+## ¿Qué nos aporta git?
+* **¿Por qué?**
+
+    * Commits *atómicos*, *claros*, *bien descritos*.
+
+* **¿Cómo?**
+
+    * El historial de commits *cuenta una historia*.
+
+---
+.center.middle
+![Joan Holloway](img/joan-holloway.jpg)
+
+---
+.center.middle.section
+## Entender ![Git](img/git.png)
+
+---
+.center.middle
+Nothing in life is to be feared. It is only to be understood.
+
+.right[*Marie Curie*]
+
+---
+.center.middle
+![Frantic](img/frantic.gif)
+
+---
+.center.middle
+# Todo es local
+
+---
+.center
+## There is no *central* spoon
+![There is no spoon](img/spoon-boy.jpg)
+
+---
+.center
+## I *didn't* drink your milkshake
+![Milkshake](img/milkshake.jpg)
+
+---
+.center.middle
+# ¡Punteros, punteros en todas partes!
+
+---
+.center.middle
+![Tree](img/branching.png)
+
+---
+.center.middle
+# Un sólo directorio para atarlos a todos.
+
+---
+.center.middle
+![Copy & paste](img/copy-paste-twins.jpg)
+
+---
+.center.middle
+# Contar una historia
+
+---
+.center.middle
+![Querido diario](img/diario.jpg)
+
+---
+.center.middle.section
+## Hacer historia con ![Git](img/git.png)
+
+---
+.intermission
+
+---
+.center.middle
+![Diagrama01](img/git-tour/01.png)
+
+---
+.center.middle
+![Diagrama02](img/git-tour/02.png)
+
+---
+.center.middle
+![Diagrama03](img/git-tour/03.png)
+
+---
+.center.middle
+![Diagrama04](img/git-tour/04.png)
+
+---
+.center.middle
+![Diagrama05](img/git-tour/05.png)
+
+---
+.center.middle
+![Diagrama06](img/git-tour/06.png)
+
+---
+.center.middle
+![Diagrama07](img/git-tour/07.png)
+
+---
+.center.middle
+![Diagrama08](img/git-tour/08.png)
+
+---
+.center.middle
+![Diagrama09](img/git-tour/09.png)
+
+---
+.center.middle
+![Diagrama10](img/git-tour/10.png)
+
+---
+.center
+## git clone
+![Clones](img/clonetroopers.png)
+
+---
+.center
+## git remote
+![Agenda](img/agenda.jpg)
+
+---
+.center.middle
+![Git transport](img/git-transport.png)
+
+---
+.center.middle.section
+## ![Git](img/git.png) avanzado
+
+---
+.center
+## git bisect
+![Binary search](img/binary_search.png)
+
+---
+.center
+## git blame
+![Blame](img/finger-pointing.jpg)
+
+---
+.center.middle.deploys
+# **Deploys con git**
+
+---
+.center.middle.section
+## La cereza del pastel: ![Github](img/github_logo.png)
+
+---
+.center.middle
+![Baracktocat](img/baracktocat.jpg)
+
+---
+.center.middle.section
+## Workflows
+
+---
+.center.middle.workflow.workflow-1
+# All by myself
+### Un desarrollador
+
+---
+.middle.workflow.workflow-2
+# Happy together
+### Dos desarrolladores
+
+---
+.center.middle.workflow.workflow-3
+# We go together
+### Like rama lama lama ka dinga da dinga dong
+
+---
+.title
+# Referencias
+
+* Git reference [http://gitref.org/](http://gitref.org/)
+
+* A visual git reference [http://marklodato.github.com/visual-git-guide/index-en.html](http://marklodato.github.com/visual-git-guide/index-en.html)
+
+* Git man pages [http://www.kernel.org/pub/software/scm/git/docs/git.html](http://www.kernel.org/pub/software/scm/git/docs/git.html)
+
+---
+.center.middle
+![Cinco ovnis](img/saucers.gif)
+        </textarea>
+        <div id="slideshow"></div>
+    </body>
+</html>
